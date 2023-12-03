@@ -28,8 +28,6 @@ console.log(obj);
 
 console.log(obj.fullName());
 
-
-
 const obj2= {
     prova:'booo',
     prova1: {
@@ -100,12 +98,12 @@ const people = [
 
 ];
 
-const minorenni = people.filter((element) => {
+/* const minorenni = people.filter((element) => {
     if (element.eta < 18) {
         return true;
     }
     return false
-})
+});
 
 
 console.log(minorenni)
@@ -116,4 +114,22 @@ const maggiorenni = people.filter((element) => {
     } return false
 });
 
-console.log(maggiorenni);
+console.log(maggiorenni); */
+
+
+const newPeople = people.map((element) => {
+    if (element.eta > 18) {
+        return { ...element, canDrive: true }
+    } return { ...element, canDrive: false }
+
+});
+console.log(newPeople);
+
+
+const newNumbers = numbers.map((element) => {
+    return element * 2;
+
+})
+
+console.log(numbers);
+console.log(newNumbers);
