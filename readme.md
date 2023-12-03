@@ -2,6 +2,8 @@ snack 1
  lista invitati "Tavolo VIP" in ordine di posto : ['BP', 'JD', 'LG', 'CR', 'GR', 'CF', 'F', 'GC', 'AC', 'M'];
  stampa in console la lista in cui ogni ospite è un oggetto che ha nome del tavolo, nome ospite e posto occcupato.
 
+
+
  snack 2
  elenco studenti identificati da _id, _nome, _sommaTotale.
  1) crea lista con il loro nome maiuscolo
@@ -17,3 +19,4 @@ id      name                      voto
 104     luigi damino                68
 188     piero alloti                50
 130     greta anselmo               84
+
