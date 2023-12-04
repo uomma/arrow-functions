@@ -264,3 +264,124 @@ console.log(studentIdAndVote);
 
  */
 
+/* const firstname = 'zio';
+const lastname = 'paperone';
+const money = 'troppi';
+const newKey='loves pizza' */
+
+
+const cosa = {
+    firstname: 'zio',
+    lastname: 'paperone',
+    money: 'troppi',
+
+    /*   [newKey]: true */
+
+};
+
+/* console.log(firstname)
+
+const { firstname, money } = cosa;
+console.log(firstname)
+ */
+
+//rest 
+
+/* 
+const sumOld = (num1, num2) => num1 + num2;
+console.log(sumOld(2, 3)) */
+
+/* function sum(...num) {
+    let sumNumbers = 0;
+
+    num.forEach((element) => {
+        sumNumbers += element;
+    })
+    return sumNumbers
+}
+ 
+
+console.log(sum(1, 2)) */
+
+/* 
+function calcola(operation, ...num) {
+    let result = 0;
+    if (operation === 'sum') {
+
+
+        num.forEach((element) => {
+            result += element;
+        });
+
+
+    } else if (operation === 'sub') {
+        num.forEach((element) => {
+            result -= element
+        });
+
+    } else {
+        return 'specifica una operazione'
+    }
+
+return result
+}
+
+console.log(calcola('sum', 1, 2, 3));
+console.log(calcola('sub', 1, 2, 3)); */
+
+/*
+// per clonare un oggetto si utilizza operatore spread (...)
+const ogg = { name: 'flavio', peso: 80 };
+//const newOgg = ogg  /=> newOgg === ogg TURE
+const newOgg = { ...ogg, etnia: 'caucasico(?)' } //=> newOgg === ogg FALSE
+
+console.log(newOgg)
+
+const studenti = [
+    {
+        nome: 'luca',
+        eta: 30
+    }, {
+        nome: 'davide',
+        eta: 32
+    }
+];
+
+const newStudent = studenti.map((element) => {
+    let cool = false;
+    if (element.eta > 30) {
+
+        cool = true;
+    }
+    return { ...element, cool };
+
+});
+
+console.log(newStudent);
+
+
+//applico destrutturazione ad array
+
+const igor = {
+    nome: 'igor',
+    eta: 44
+};
+
+const { nome } = igor; //=const nome = igor.nome
+
+
+console.log(nome);
+
+
+const lucky = [1, 2, 3, 4, 5, 6];
+
+const num0 = numbers[0];
+const num4 = numbers[3];
+
+console.log(numbers[0]);
+console.log(numbers[3]);
+
+const [primo, secondo] = numbers;
+console.log(primo);
+console.log(secondo);
+*/
