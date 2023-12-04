@@ -20,3 +20,14 @@ id      name                      voto
 188     piero alloti                50
 130     greta anselmo               84
 
+snack 3 
+
+creare array di oggetti in cui ogni oggetto descriverà una bici con nome e peso.
+stampa in console la bici con peso minore utilizzando deconstructuring e template literal
+
+snack 4 
+crea array di oggetti squadre di calcio con le seguenti proprietà : nome, pf, fs.
+nome sarà lunica proprietà da compilare , le altre saranno settate a 0 .
+genera numeri random al posto degli 0 
+
+infine usando deconstructuring crea nuovo array i cui elementi contengono solo nomi e fs e stampa tutto in pagina
