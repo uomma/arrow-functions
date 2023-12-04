@@ -138,7 +138,7 @@ console.log(newNumbers); */
  lista invitati "Tavolo VIP" in ordine di posto : ['BP', 'JD', 'LG', 'CR', 'GR', 'CF', 'F', 'GC', 'AC', 'M'];
  stampa in console la lista in cui ogni ospite è un oggetto che ha nome del tavolo, nome ospite e posto occcupato.
  */
-
+/* 
 const tavoloVip = [
     {
         nome: 'BP',
@@ -202,7 +202,7 @@ id      name                      voto
 145     gaia borrini                74
 104     luigi damino                68
 188     piero alloti                50
-130     greta anselmo               84 */
+130     greta anselmo               84 
 
 
 const studenti = [
@@ -260,4 +260,7 @@ const studentIdAndVote = studenti.filter((element)=>{
         return true
     } return false
 }) ;
-console.log(studentIdAndVote)
+console.log(studentIdAndVote);
+
+ */
+
