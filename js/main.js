@@ -395,7 +395,7 @@ stampa in console la bici con peso minore utilizzando deconstructuring e templat
 *******************************************************************************************/
 
 
-const bikes = [
+/* const bikes = [
     { nome: 'A', peso: 8 }, { nome: 'B', peso: 7 }, { nome: ' C', peso: 14 }, { nome: 'D', peso: 3 }, { nome: 'E', peso: 11 }, { nome: 'F', peso: 5 },
 ];
 
@@ -412,3 +412,60 @@ for (let i = 1; i < bikes.length; i++) {
 
 const { nome, peso } = firstBike;
 console.log(`la bici piu leggera è ${nome} e pesa ${peso}`);
+ */
+
+
+/******************************************************************
+ snack 4 
+crea array di oggetti squadre di calcio con le seguenti proprietà : nome, pf, fs.
+nome sarà lunica proprietà da compilare , le altre saranno settate a 0 .
+genera numeri random al posto degli 0 
+
+infine usando deconstructuring crea nuovo array i cui elementi contengono solo nomi e fs e stampa tutto in pagina 
+*********************************************************************/
+
+/* FUNCTIONS */
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+/* MAIN */
+const teams = [
+    {
+        nome: 'milan',
+        pf: 0,
+        fs: 0
+    },
+    {
+        nome: 'juve',
+        pf: 0,
+        fs: 0
+    }, {
+        nome: 'inter',
+        pf: 0,
+        fs: 0
+    }, {
+        nome: 'parma',
+        pf: 0,
+        fs: 0
+    },
+];
+
+console.log(teams);
+
+//genereazione numeri random
+teams.forEach((element) => {
+
+    element.pf = getRndInteger(60, 80)
+    element.fs = getRndInteger(20, 30)
+    console.log(element.pf);
+    console.log(element.fs)
+
+});
+
+
+//destrutturi direttamente dentro map che crea un nuovo array 
+const newTeams= teams.map(({nome, fs})=>{
+ return {nome, fs}
+}); console.log(newTeams);
