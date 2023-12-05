@@ -385,3 +385,30 @@ const [primo, secondo] = numbers;
 console.log(primo);
 console.log(secondo);
 */
+
+
+/****************************************************************************************
+snack 3 
+
+creare array di oggetti in cui ogni oggetto descriverà una bici con nome e peso.
+stampa in console la bici con peso minore utilizzando deconstructuring e template literal
+*******************************************************************************************/
+
+
+const bikes = [
+    { nome: 'A', peso: 8 }, { nome: 'B', peso: 7 }, { nome: ' C', peso: 14 }, { nome: 'D', peso: 3 }, { nome: 'E', peso: 11 }, { nome: 'F', peso: 5 },
+];
+
+
+let firstBike = bikes[0];
+for (let i = 1; i < bikes.length; i++) {
+    const currentBike = bikes[i];
+
+    if (currentBike.peso < firstBike.peso) {
+        firstBike = currentBike;
+    };
+    console.log(currentBike);
+};
+
+const { nome, peso } = firstBike;
+console.log(`la bici piu leggera è ${nome} e pesa ${peso}`);
